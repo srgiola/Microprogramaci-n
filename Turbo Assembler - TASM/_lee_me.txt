@@ -1,0 +1,10 @@
+Para ejecutar un programa en Turbo Assembler deber iniciar CMD y luego ir a la carpeta donde
+se encuentre tanto los ejecutables de TASM.EXE y TLINK.EXE como tu codigo en .asm
+
+Suponiendo que tienes todos los archivos en el escritorio y ejecutaremos el Lab_1.asm
+
+1 - Abrir CMD
+2 - CD DESKTOP
+3 - TASM Lab_1.asm
+4 - TLINK Lab_1.obj
+5 - Lab_1.exe

@@ -1,0 +1,102 @@
+.MODEL SMALL
+.DATA
+	VAR1 DB 'Sergio Lara $'
+	VAR2 DB '1044418 $'
+.STACK
+.CODE
+MAIN:
+	;EJERCICIO 1
+	MOV AX, @DATA 
+	MOV DS, AX
+	
+	MOV DX, OFFSET VAR1
+	MOV AH, 09h
+	INT 21h 
+	
+	MOV DX, OFFSET VAR2
+	MOV AH, 09h
+	INT 21h
+	
+	MOV DX, 0h
+	
+	;EJERCICIO 3
+	MOV DL, 53h ;CARACTERES ASCII S
+	MOV AH, 02h
+	INT 21h
+	
+	MOV DL, 2Dh
+	MOV AH, 02h
+	INT 21h
+	;e
+	MOV DL, 65h 
+	MOV AH, 02h
+	INT 21h
+	
+	MOV DL, 2Dh
+	MOV AH, 02h
+	INT 21h
+	;r
+	MOV DL, 72h 
+	MOV AH, 02h
+	INT 21h
+	
+	MOV DL, 2Dh
+	MOV AH, 02h
+	INT 21h
+	;g
+	MOV DL, 67h 
+	MOV AH, 02h
+	INT 21h
+	
+	MOV DL, 2Dh
+	MOV AH, 02h
+	INT 21h
+	;i
+	MOV DL, 69h 
+	MOV AH, 02h
+	INT 21h
+	
+	MOV DL, 2Dh
+	MOV AH, 02h
+	INT 21h
+	;o
+	MOV DL, 6Fh 
+	MOV AH, 02h
+	INT 21h
+	
+	MOV DL, 2Dh
+	MOV AH, 02h
+	INT 21h
+	;L
+	MOV DL, 4Ch 
+	MOV AH, 02h
+	INT 21h
+	
+	MOV DL, 2Dh
+	MOV AH, 02h
+	INT 21h
+	;a
+	MOV DL, 61h 
+	MOV AH, 02h
+	INT 21h
+	
+	MOV DL, 2Dh
+	MOV AH, 02h
+	INT 21h
+	;r
+	MOV DL, 72h 
+	MOV AH, 02h
+	INT 21h
+	
+	MOV DL, 2Dh
+	MOV AH, 02h
+	INT 21h
+	;a
+	MOV DL, 61h 
+	MOV AH, 02h
+	INT 21h
+	
+	;Finalización del programa
+	MOV AH, 4Ch 
+	INT 21h
+END MAIN

@@ -1,0 +1,15 @@
+Para correr programas en Macro Assembler es necesario contar con Visual Studio 2017, 
+preferiblemente de x64
+
+Instalar la extensión de MASM y ejecutar tu codigo dentro de Visual Studio
+
+Instalar la extensión de MASM (Carpeta Instaladores)
+1 - Ejecuta como administrador AsmDude.exe y seleciona VS 2017
+2 - Ejecuta como administrador vcsetup.exe
+3 - Ejecuta como administrador MASMsetup.exe
+4 - Ejecuta como administrador install.exe
+
+Preparar ambiente de VS 2017 para programar en Macro Assembler
+1 - Crea un proyecto vacio de C++
+2 - Elimina las carpeta ## y ##
+3 - Clic derecho sobre la solución
