@@ -11,5 +11,11 @@ Instalar la extensión de MASM (Carpeta Instaladores)
 
 Preparar ambiente de VS 2017 para programar en Macro Assembler
 1 - Crea un proyecto vacio de C++
-2 - Elimina las carpeta ## y ##
-3 - Clic derecho sobre la solución
+2 - Elimina las carpetas 'Archivos de recursos', 'Archivos de origen' y 'Archivos de encabezado'
+3 - Agregar un nuevo elemento, que sea un Archivo C++
+4 - Cambiar la extención del elemento agregado por .asm
+5 - Clic derecho sobre el proyecto e ir a Dependencias de compilación -> Personalizaciones de compilación
+6 - Selecionar el archivo 'masm(.target, .props)'
+7 - Clic derecho sobre el archivo con extención .asm y abrir propiedades
+8 - Indicar el tipo de elemento como 'Microsoft Macro Assembler'
+
